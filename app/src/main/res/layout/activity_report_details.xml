@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Report_details">
+    <LinearLayout
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="70dp"
+            android:contentDescription="@string/back_btn_icon"
+            android:src="@drawable/back_btn"
+            />
+
+        <TextView
+            style="@style/HeadingText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/report_details_page_title" />
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="308dp"
+        android:layout_height="wrap_content"
+        android:text="@string/report_summary_writeup"
+       style="@style/BodyText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="83dp"
+        />
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      android:padding="15dp"
+      android:layout_marginTop="300dp">
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Name of Document owner:"
+          style="@style/SmallText"
+          />
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          style="@style/SmallText"
+          android:text="Category:"/>
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          style="@style/SmallText"
+          android:text="Sub-category:"/>
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          style="@style/SmallText"
+          android:text="Date when item was lost:"/>
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          style="@style/SmallText"
+          android:text="Report description:"/>
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          style="@style/SmallText"
+          android:text=" Location where item was lost:"/>
+      <TextView
+          android:layout_width="wrap_content"
+          style="@style/SmallText"
+          android:layout_height="wrap_content"
+          android:text=" Reported by:"/>
+  </LinearLayout>
+
+
+
+</RelativeLayout>

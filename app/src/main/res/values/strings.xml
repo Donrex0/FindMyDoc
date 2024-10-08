@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">FindMyDoc</string>
+    <string name="privacy">Privacy &amp; Security</string>
+    <string name="Skip_text">Skip</string>
+    <string name="get_started">GET STARTED</string>
+    <string name="onboardingtext_1">Have you been searching for your lost documents?</string>
+    <string name="splash_image_description">Splash image</string>
+    <string name="onboardingtext_2">Have you found missing documents without owners?</string>
+    <string name="next_btn_text">NEXT</string>
+    <string name="finish_btn_text">FINISH</string>
+    <string name="onboarding3_text">Link up with your lost documents or the owners of found documents today</string>
+    <string name="profile_settings_text">Profile</string>
+    <string name="settings_notifications_text">Notifications</string>
+    <string name="settings_dark_mode_text">Dark Mode</string>
+    <string name="settings_feedback_text">Feedback</string>
+    <string name="settings_share_text">Share our app</string>
+    <string name="settings_about_text">About app</string>
+    <string name="settings_logout_text">Logout</string>
+    <string name="report_details_page_title">Report Details</string>
+    <string name="back_btn_icon">Back_btn icon</string>
+    <string name="report_submitted_page_title">Report Submitted</string>
+    <string name="report_summary_writeup">Verify to see if the details of your report are correct.</string>
+</resources>

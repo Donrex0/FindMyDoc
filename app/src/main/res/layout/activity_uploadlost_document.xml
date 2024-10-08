@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Uploadlost_documentActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:paddingBottom="5dp"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/previous_back_arrow"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                />
+
+            <TextView
+                android:id="@+id/settings"
+                android:layout_width="260dp"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:text="Report Lost Document"
+                android:textSize="24sp"
+                android:textColor="@color/navy"
+                android:fontFamily="sans-serif-black"
+                android:layout_marginStart="132dp"
+                android:layout_marginEnd="132dp"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center" />
+        </LinearLayout>
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_weight="1"
+           android:padding="16dp"
+           android:textDirection="ltr"
+           android:layout_marginStart="1dp"
+           android:orientation="vertical">
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_weight="1"
+               android:fontFamily="sans-serif"
+               android:padding="10dp"
+
+               android:text="Who owns the document?"
+               android:textSize="16sp" />
+
+           <EditText
+                    android:id="@+id/document_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/shape1_inputbtn"/>
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_weight="1"
+               android:fontFamily="sans-serif"
+               android:padding="10dp"
+
+               android:text="Document Status"
+               android:textSize="16sp" />
+
+           <EditText
+               android:id="@+id/document_status"
+               android:layout_width="match_parent"
+               android:layout_height="45dp"
+               android:gravity="center_vertical"
+               android:background="@drawable/shape1_inputbtn"/>
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_weight="1"
+               android:fontFamily="sans-serif"
+               android:padding="10dp"
+               android:textColor="@color/navy"
+               android:text="Document Category"
+               android:textSize="16sp" />
+
+           <EditText
+               android:id="@+id/document_category"
+               android:layout_width="match_parent"
+               android:layout_height="45dp"
+               android:gravity="center_vertical"
+               android:background="@drawable/shape1_inputbtn"/>
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_weight="1"
+               android:fontFamily="sans-serif"
+               android:padding="10dp"
+                android:textColor="@color/navy"
+               android:text="Document Sub-category"
+               android:textSize="16sp" />
+
+           <EditText
+               android:id="@+id/document_subcategory"
+               android:layout_width="match_parent"
+               android:layout_height="45dp"
+               android:gravity="center_vertical"
+               android:background="@drawable/shape1_inputbtn"/>
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_weight="1"
+               android:fontFamily="sans-serif"
+               android:padding="10dp"
+               android:textColor="@color/navy"
+               android:text="Date of Lost?"
+               android:textSize="16sp" />
+
+           <EditText
+               android:id="@+id/lost_date"
+               android:layout_width="match_parent"
+               android:layout_height="45dp"
+               android:gravity="center_vertical"
+               android:background="@drawable/shape1_inputbtn"/>
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_weight="1"
+               android:fontFamily="sans-serif"
+               android:padding="10dp"
+               android:textColor="@color/navy"
+               android:text="Location of Lost document?"
+               android:textSize="16sp" />
+
+           <EditText
+               android:id="@+id/lost_location"
+               android:layout_width="match_parent"
+               android:layout_height="45dp"
+               android:gravity="center_vertical"
+               android:background="@drawable/shape1_inputbtn"/>
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_weight="1"
+               android:fontFamily="sans-serif"
+               android:padding="10dp"
+                android:textColor="@color/navy"
+               android:text="Who owns the document?"
+               android:textSize="16sp" />
+
+           <ImageButton
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:src="@drawable/camera_image_adder"/>
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_weight="1"
+               android:fontFamily="sans-serif"
+               android:padding="10dp"
+               android:text="Add details"
+               android:textColor="@color/navy"
+               android:textSize="16sp" />
+
+           <EditText
+               android:id="@+id/add_document_details"
+               android:layout_width="match_parent"
+               android:layout_height="45dp"
+               android:gravity="center_vertical"
+               android:background="@drawable/shape1_inputbtn"/>
+
+           <CheckBox
+               android:id="@+id/include_rewards"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Include rewards"
+               android:fontFamily="sans-serif"
+               android:textSize="16sp"
+               android:layout_weight="1"
+               android:textColor="@color/navy"
+               android:layout_marginTop="12dp"
+               android:layout_gravity="left"
+               />
+           <EditText
+               android:id="@+id/add_rewards"
+               android:layout_width="match_parent"
+               android:layout_height="45dp"
+               android:gravity="center_vertical"
+               android:background="@drawable/shape1_inputbtn"
+               android:hint="e.g 5000 XAF"
+               android:textColor="@color/exception"/>
+
+
+       </LinearLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape1_inputbtn"
+            android:backgroundTint="@color/turqoise_green"
+            android:text="continue"
+            android:textAllCaps="true"
+            android:padding="10dp"
+            android:textColor="@color/white"
+            android:layout_gravity="center_horizontal"/>
+
+    </LinearLayout>
+
+
+</ScrollView>

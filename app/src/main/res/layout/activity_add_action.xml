@@ -1,0 +1,75 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Add_ActionActivity">
+
+    <!-- Top Bar Layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:paddingBottom="5dp">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/previous_back_arrow"
+            android:layout_gravity="left" />
+    </LinearLayout>
+
+    <!-- Header Text -->
+    <TextView
+        android:id="@+id/add_action"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="What do you want to Report?"
+        android:textColor="@color/navy"
+        android:layout_marginTop="112dp"
+        android:textSize="24sp"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center_horizontal" />
+
+    <!-- Lost Button -->
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       android:gravity="center_vertical"
+       android:layout_marginTop="50dp">
+
+       <Button
+           android:id="@+id/Lost_Add_Action_btn"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_centerHorizontal="true"
+           android:layout_marginTop="234dp"
+           android:background="@drawable/shape1_inputbtn"
+           android:backgroundTint="@color/turqoise_green"
+           android:text="Lost"
+           android:textAllCaps="true"
+           android:textColor="@color/white"
+           android:layout_marginStart="18dp"
+           android:layout_marginEnd="18dp"/>
+
+       <!-- Found Button (Positioned below Lost Button) -->
+       <Button
+           android:id="@+id/Found_Add_Action_btn"
+           android:layout_width="match_parent"
+           android:layout_height="50dp"
+           android:layout_centerHorizontal="true"
+           android:layout_below="@id/Lost_Add_Action_btn"
+           android:layout_marginTop="16dp"
+           android:background="@drawable/shape1_inputbtn"
+           android:backgroundTint="@color/navy"
+           android:text="Found"
+           android:layout_marginStart="18dp"
+            android:layout_marginEnd="18dp"
+           android:textAllCaps="true"
+           android:textColor="@color/white" />
+
+   </LinearLayout>
+
+</RelativeLayout>

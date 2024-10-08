@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center_horizontal"
+    tools:context=".Add_ContactActivity">
+
+    <!-- Back Arrow and Title -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="10dp"
+        android:padding="15dp"
+        android:paddingBottom="10dp">
+
+        <!-- Back Arrow -->
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/previous_back_arrow"
+            android:contentDescription="Back"
+            android:layout_marginEnd="10dp" />
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="How can we get to you?"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:orientation="vertical">
+
+
+
+        <!-- Phone Number Field -->
+
+        <EditText
+            android:id="@+id/user_phoneNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter a valid number"
+            android:textStyle="italic"
+            android:inputType="phone"
+            android:padding="12dp"
+            android:background="@drawable/shape1_inputbtn"
+            android:textColor="@color/light_blue"
+            android:layout_marginTop="20dp"/>
+
+        <!-- WhatsApp Number Field -->
+        <EditText
+            android:id="@+id/whatsapp_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="WhatsApp number"
+            android:inputType="phone"
+            android:padding="12dp"
+            android:background="@drawable/shape1_inputbtn"
+            android:textColor="@android:color/black"
+            android:textColorHint="@android:color/darker_gray"
+            android:layout_marginTop="16dp"/>
+
+    </LinearLayout>
+    <!-- Remember Me Checkbox -->
+    <CheckBox
+        android:id="@+id/remember_me"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Remember me"
+        android:textColor="@color/navy"
+        android:layout_marginTop="12dp"
+        android:layout_gravity="left"
+        />
+
+    <!-- Continue Button -->
+    <Button
+        android:id="@+id/add_contact_confirmBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="CONTINUE"
+        android:backgroundTint="@color/turqoise_green"
+        android:textColor="@android:color/white"
+        android:padding="12dp"
+        android:textAllCaps="true"
+        android:textSize="16sp"/>
+</LinearLayout>

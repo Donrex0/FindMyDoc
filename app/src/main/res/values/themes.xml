@@ -1,0 +1,30 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.FindMyDoc" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="Theme.FindMyDoc" parent="Base.Theme.FindMyDoc" />
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- To use the inter font globally, we place it here-->
+        <item name="android:fontFamily">@font/inter_variable</item>
+    </style>
+
+    <style name="HeadingText">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@color/navy</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="BodyText">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/navy</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+    <style name="SmallText">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/navy</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+</resources>
